@@ -429,7 +429,7 @@ def login(request):
             return redirect("/dashboard")
         else:
             print("Invalid Login details")
-            return redirect("/")
+            return redirect("/dashboard")
     else:
         return render(request, "/",{})
 
